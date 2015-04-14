@@ -1,0 +1,9 @@
+<suite name="RetailMeNotTestsSuite" verbose="10">
+	<test name="RetailMeNotTests+FF">
+		<parameter name="browserType" value="FF" />
+		<parameter name="url" value="http://www.retailmenot.com/" />
+		<classes>
+			<class name="com.retailmenot.tests.RetailMeNotTests" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [RetailMeNotTestsSuite]">
+  <parameter name="browserType" value="FF"/>
+  <parameter name="url" value="http://www.retailmenot.com/"/>
+  <test name="RetailMeNotTests+FF(failed)">
+    <parameter name="browserType" value="FF"/>
+    <parameter name="url" value="http://www.retailmenot.com/"/>
+    <classes>
+      <class name="com.retailmenot.tests.RetailMeNotTests">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="browseDeals"/>
+          <include name="verifyDealResults" invocation-numbers="0"/>
+          <include name="postTest"/>
+        </methods>
+      </class> <!-- com.retailmenot.tests.RetailMeNotTests -->
+    </classes>
+  </test> <!-- RetailMeNotTests+FF(failed) -->
+</suite> <!-- Failed suite [RetailMeNotTestsSuite] -->

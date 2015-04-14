@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[The Count of Hot Product Deal Item  Home & Kitchenis -->17]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Coupon at is displayed  Home & Kitchen-->0]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Sale at is displayed  Home & Kitchen-->17]]>
+    </line>
+    <line>
+      <![CDATA[The Count of Hot Product Deal Item  Electronics Dealsis -->8]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Coupon at is displayed  Electronics Deals-->3]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Sale at is displayed  Electronics Deals-->5]]>
+    </line>
+    <line>
+      <![CDATA[The couponDetais are as -->$10 Off $50+ for New Customers]]>
+    </line>
+    <line>
+      <![CDATA[The couponCode are as-->RMN10OFF50]]>
+    </line>
+    <line>
+      <![CDATA[The Count of Hot Product Deal Item  Accessories & Shoesis -->12]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Coupon at is displayed  Accessories & Shoes-->1]]>
+    </line>
+    <line>
+      <![CDATA[Number of times the Sale at is displayed  Accessories & Shoes-->11]]>
+    </line>
+    <line>
+      <![CDATA[The couponDetais are as -->$5 Off $50+]]>
+    </line>
+    <line>
+      <![CDATA[The couponCode are as-->LITBALL5]]>
+    </line>
+  </reporter-output>
+  <suite name="RetailMeNotTestsSuite" duration-ms="41061" started-at="2015-03-16T14:44:35Z" finished-at="2015-03-16T14:45:16Z">
+    <groups>
+    </groups>
+    <test name="RetailMeNotTests+FF" duration-ms="41061" started-at="2015-03-16T14:44:35Z" finished-at="2015-03-16T14:45:16Z">
+      <class name="com.retailmenot.tests.RetailMeNotTests">
+        <test-method status="PASS" signature="invokeBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="invokeBrowser" is-config="true" duration-ms="11337" started-at="2015-03-16T07:44:35Z" finished-at="2015-03-16T07:44:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.retailmenot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="browseDeals(java.lang.String)[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="browseDeals" duration-ms="7663" started-at="2015-03-16T07:44:47Z" finished-at="2015-03-16T07:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.retailmenot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseDeals -->
+        <test-method status="FAIL" signature="verifyDealResults(java.lang.String)[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="verifyDealResults" duration-ms="8186" started-at="2015-03-16T07:44:55Z" data-provider="hotProductDeals" depends-on-methods="com.retailmenot.tests.RetailMeNotTests.browseDeals" finished-at="2015-03-16T07:45:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home & Kitchen]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//section[@id='homekitchen']//span[contains(text(),'Coupon')]/a"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'Ananya', ip: '192.168.0.112', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_51'
+*** Element info: {Using=xpath, value=//section[@id='homekitchen']//span[contains(text(),'Coupon')]/a}
+Session ID: af3a8114-b00b-4337-a1d9-2aecb06764db
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=36.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//section[@id='homekitchen']//span[contains(text(),'Coupon')]/a"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'Ananya', ip: '192.168.0.112', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_51'
+*** Element info: {Using=xpath, value=//section[@id='homekitchen']//span[contains(text(),'Coupon')]/a}
+Session ID: af3a8114-b00b-4337-a1d9-2aecb06764db
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=36.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.retailmenot.pages.HotProductDealsPage.seeOfferAndCode(HotProductDealsPage.java:138)
+	at com.retailmenot.tests.RetailMeNotTests.verifyDealResults(RetailMeNotTests.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//section[@id='homekitchen']//span[contains(text(),'Coupon')]/a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
+System info: host: 'Ananya', ip: '192.168.0.112', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Ananya%27s/AppData/Local/Temp/anonymous29370903613068699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Ananya%27s/AppData/Local/Temp/anonymous29370903613068699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[The Count of Hot Product Deal Item  Home & Kitchenis -->17]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Coupon at is displayed  Home & Kitchen-->0]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Sale at is displayed  Home & Kitchen-->17]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDealResults -->
+        <test-method status="PASS" signature="verifyDealResults(java.lang.String)[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="verifyDealResults" duration-ms="6343" started-at="2015-03-16T07:45:03Z" data-provider="hotProductDeals" depends-on-methods="com.retailmenot.tests.RetailMeNotTests.browseDeals" finished-at="2015-03-16T07:45:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Electronics Deals]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Count of Hot Product Deal Item  Electronics Dealsis -->8]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Coupon at is displayed  Electronics Deals-->3]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Sale at is displayed  Electronics Deals-->5]]>
+            </line>
+            <line>
+              <![CDATA[The couponDetais are as -->$10 Off $50+ for New Customers]]>
+            </line>
+            <line>
+              <![CDATA[The couponCode are as-->RMN10OFF50]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDealResults -->
+        <test-method status="PASS" signature="verifyDealResults(java.lang.String)[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="verifyDealResults" duration-ms="6554" started-at="2015-03-16T07:45:10Z" data-provider="hotProductDeals" depends-on-methods="com.retailmenot.tests.RetailMeNotTests.browseDeals" finished-at="2015-03-16T07:45:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Accessories & Shoes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Count of Hot Product Deal Item  Accessories & Shoesis -->12]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Coupon at is displayed  Accessories & Shoes-->1]]>
+            </line>
+            <line>
+              <![CDATA[Number of times the Sale at is displayed  Accessories & Shoes-->11]]>
+            </line>
+            <line>
+              <![CDATA[The couponDetais are as -->$5 Off $50+]]>
+            </line>
+            <line>
+              <![CDATA[The couponCode are as-->LITBALL5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDealResults -->
+        <test-method status="PASS" signature="postTest()[pri:0, instance:com.retailmenot.tests.RetailMeNotTests@eca425c]" name="postTest" is-config="true" duration-ms="158" started-at="2015-03-16T07:45:16Z" finished-at="2015-03-16T07:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTest -->
+      </class> <!-- com.retailmenot.tests.RetailMeNotTests -->
+    </test> <!-- RetailMeNotTests+FF -->
+  </suite> <!-- RetailMeNotTestsSuite -->
+</testng-results>
